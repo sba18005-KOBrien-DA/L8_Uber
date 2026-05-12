@@ -22,9 +22,9 @@ data=load_data(10000)
 data_load_state.text("Loading data Done!")
 
 
-
-st.subheader("Raw Data")
-st.write(data)
+if st.checkbox("show raw data"):
+	st.subheader("Raw Data")
+	st.write(data)
 
 
 st.subheader("Num Pickups per hour")
